@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-height: 100vh;
+    background-color: #380D0E;
+    font-style: italic;
+}
+
+/* Navbar */
+.container {
+    height:15vh;
+    grid-column: 1/11;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #a4895df9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+
+}
+
+/* Logo */
+.logo a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 50px;
+
+  }
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    margin-right: 130px;
+}
+
+/* Section Styling */
+section {
+    margin: 2rem 8.5rem;
+}
+
+/* Main Section for Shadowed Circle and Image */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+}
+.main h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: italic;
+    margin-left: -50px;
+
+  }
+.main h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: italic;
+    margin-left: -50px;
+  }
+
+
+.main p {
+    margin-top: 1rem;
+    font-size: .98rem;
+     font-weight: 600;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: italic;
+    margin-left: -50px;
+  }
+
+
+.btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+    
+
+}
+
+/* Shadowed Circle */
+.circle {
+    width: 500px; /* Adjust size of the circle */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    box-shadow: 0 0 100px #f8df00;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* the image should fills the circle */
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the circle without distortion */
+    position: absolute; /* Make sure image is correctly positioned inside the circle */
+}
+
+/* Images - Positioned inside the circle */
+.images {
+    width: 100%; /* Ensure it takes up full space within the circle */
+    height: 100%; /* Same as width to maintain a square shape */
+    border-radius: 50%; /* Keeps it circular */
+    object-fit: cover; /* Ensures image covers the entire area */
+    position: absolute; /* Ensures the image stays within the circle */
+}
+
+/* Responsive Nav */
+@media only screen and (max-width: 740px) {
+    .menu {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    nav {
+        position: absolute;
+        display: inline;
+        top: 75px;
+        text-align: center;
+        background-color: #474854;
+        left: -100%;
+        z-index: 0;
+        width: 100%;
+        letter-spacing: 7px;
+
+    }
+}
+@media only screen and (max-width: 480px) {
+    .menu {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    nav {
+        position: absolute;
+        display: inline;
+        top: 75px;
+        text-align: center;
+        background-color: #474854;
+        left: -100%;
+        z-index: 0;
+        width: 100%;
+        letter-spacing: 7px;
+
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .nav a{
+        display: none;
+    }
+}
+
+
+        
+
